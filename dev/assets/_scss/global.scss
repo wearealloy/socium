@@ -1,13 +1,18 @@
 /****************** GLOBAL *********************/
 
-$ff-serif: serif; 
 
-$ff-sansSerif: sans-serif; 
+$ff-serif: serif; 
+$ff-sansSerif: 'Bai Jamjuree', sans-serif;
+$ff-sansSerif-alt: 'Khand', sans-serif;
 
 // color palette
-$black: #525559;
+$black: #000;
 $white: #fff;
-$gray: #9A9A9A;
+$lightBlue: #4B90CD;
+$darkBlue: #1A325E;
+$green: #32AA6B;
+$gray: #E3E3E3;
+$darkGray: #333333;
 
 
 
@@ -46,7 +51,7 @@ html,
 body {
 	margin: 0;
 	padding: 0;
-	color: $black;
+	color: $darkGray;
 }
 
 *,

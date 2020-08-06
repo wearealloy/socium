@@ -14,9 +14,16 @@
 @import 'fragments/typography.scss';
 @import 'fragments/forms.scss';
 @import 'fragments/buttons.scss';
+@import 'fragments/blue-phrase.scss';
 
 // navigation
 @import 'navigation/main-nav.scss';
 @import 'navigation/main-footer.scss';
 
 //section
+
+@import 'sections/hero.scss';
+@import 'sections/picture-right.scss';
+@import 'sections/picture-left.scss';
+@import 'sections/testimonials.scss';
+

@@ -7,4 +7,9 @@ window.$ = $;
 import slick from 'slick-carousel';
 import waypoint from '../../../node_modules/waypoints/lib/noframework.waypoints';
 
+$('.testimonials-slider').slick({
+    arrows: false,
+    dots: true
+});
+
 

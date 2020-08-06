@@ -1,0 +1,31 @@
+section.hero{
+
+    background-image: url('/media/home/home-banner.jpg');
+    background-size: cover;
+    background-position: center;
+
+    
+    >div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        @media screen and (min-width: $tablet-BP) {
+            min-height: 700px;
+        }
+
+        
+        h1{
+            color: $white;
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 0;
+
+            p{
+                font-weight: normal;
+                margin-bottom: 8px;
+            }
+        }
+    }
+}
