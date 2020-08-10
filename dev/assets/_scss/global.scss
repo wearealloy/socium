@@ -87,6 +87,20 @@ body {
 section {
 	padding: 0 2em;
 
+	&:nth-of-type(1){
+        padding-top: 55px;
+
+        @media screen and (min-width: $tablet-BP) {
+            padding-top: 114px;
+        }
+
+        &>div {
+            @media(min-width: $tablet-BP) {
+                padding-top: 0;
+            }
+        }
+    }
+
 	@media(min-width: $tablet-BP) {
 		padding: 0 4em;
 	}

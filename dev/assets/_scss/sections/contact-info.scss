@@ -1,0 +1,91 @@
+section.contact-info {
+
+    @media screen and (min-width: 890px){
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    >div {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        padding-right: 0;
+
+        .contact {
+            text-align: center;
+            width: 100%;
+            margin-bottom: 30px;
+
+            @media screen and (min-width: 890px){
+                width: 33%;
+                padding: 40px;
+                margin-bottom: 0;
+            }
+
+            &:nth-child(2) {
+                position: relative;
+                border-top: 1px solid $gray;
+                border-bottom: 1px solid $gray;
+                padding: 30px 0;
+
+                &::before, &:after{
+                    content: '';
+                    position: absolute;
+                    height: 1px;
+                    width: 100%;
+                    background-color: $gray;
+                    left: 0;
+                }
+
+                &:before{
+                    top: -5px;
+                }
+
+                &:after{
+                    bottom: -5px;
+                }
+
+                @media screen and (min-width: 890px) {
+                    border-right: 1px solid $gray;
+                    border-left: 1px solid $gray;
+                    border-top: none;
+                    border-bottom: none;
+
+                    &::before, &:after{
+                        content: '';
+                        position: absolute;
+                        height: 100%;
+                        width: 1px;
+                        background-color: $gray;
+                        top: 0;
+                        left: auto;
+                    }
+
+                    &:before{
+                        left: -5px;
+                    }
+
+                    &:after{
+                        right: -5px;
+                        bottom: auto;
+                    }
+                }
+            }
+
+            h4{
+                color: $darkBlue;
+                text-transform: uppercase;
+            }
+
+            a{
+                color: $darkGray;
+                text-decoration: none;
+                line-height: 1.5;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

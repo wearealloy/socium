@@ -24,6 +24,9 @@
 	<script {%if siteUrl %} src="{{ siteUrl }}assets/js/scripts/vendor/modernizr-custom.js" {% else %} src="../web/assets/js/scripts/vendor/modernizr-custom.js"{% endif %}></script>
 </head>
 <body>
+
+	{% include './navigation/main-nav.html' %}
+
 	{% block content %}
     {% endblock %}
 

@@ -2,4 +2,19 @@
 		MAIN NAV
 \*----------------------------------------------------------------*/
 
+div.main-nav-container{
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 40px 40px;
+	width: 100vw;
 
+	nav.main-nav{
+		max-width: 1300px;
+		margin: 0 auto;
+
+		.logo{
+			width: 200px;
+		}
+	}
+}
