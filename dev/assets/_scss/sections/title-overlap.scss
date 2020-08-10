@@ -1,0 +1,22 @@
+section.title-overlap{
+
+    >div{
+        position: relative;
+    }
+
+    .gray-header{
+
+
+        
+        @media screen and (min-width: $tablet-BP) {
+            text-align: right;
+        }
+    }
+
+    p{
+        @media screen and (min-width: $tablet-BP) {
+            max-width: 65%;
+            margin-top: -65px;
+        }
+    }
+}

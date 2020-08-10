@@ -1,0 +1,11 @@
+{% extends "_layout.html" %}
+
+{% block content %}
+
+<main role="article" class="template {{ entry.title | lower }}" id="main-content">
+    {% include './sections/gray-banner.html' %}
+    {% include './sections/case-study-article.html' %}
+    {% include './sections/contact-cta.html' %}
+</main>
+
+{% endblock %}

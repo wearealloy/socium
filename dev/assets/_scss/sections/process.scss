@@ -1,0 +1,42 @@
+section.process{
+
+    position: relative;
+    background-size: cover;
+    // background-image: url('/media/home/home-banner.jpg');
+    background-color: $gray;
+
+
+    // if we want the image to be programatically grayed out
+
+    // &:before{
+    //     content: '';
+    //     height: 100%;
+    //     width: 100%;
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     background-size: cover;
+    //     filter: grayscale(100%);
+    //     z-index: -1;
+    //     background-image: url('/media/home/home-banner.jpg');
+    // }
+
+    .gray-header{
+        color: $white;
+        margin-bottom: 50px;
+        text-shadow: 0px 0px 7px rgba($color: #616161, $alpha: 0.5);
+    }
+
+    .single-process{
+        max-width: 700px;
+        margin-bottom: 60px;
+
+        &:nth-last-child(1){
+            margin-bottom: 0;
+        }
+
+        h4{
+            color: $darkBlue;
+        }
+    }
+}

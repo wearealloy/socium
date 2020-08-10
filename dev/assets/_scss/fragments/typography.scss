@@ -41,20 +41,46 @@ h6 {
     }
 
     &.gray-header{
-        font-size: 40px;
+        font-size: 60px;
         letter-spacing: 2px;
         text-transform: uppercase;
         font-weight: 500;
+        color: $gray;
+        font-family: $ff-sansSerif-alt;
         line-height: 0.8;
 
         @media(min-width: $mobile-BP) {
-            font-size: 60px;
+            font-size: 90px;
         }
         
         @media(min-width: $tablet-BP) {
-            line-height: 1;
             font-size: 130px;
             letter-spacing: 10px;
+        }
+
+        &.offset-left{
+            margin-left: 0;
+
+            @media screen and (min-width: $tablet-BP) {
+                margin-left: -70px; 
+            }
+        }
+    }
+
+    span.blue-line{
+        width: 50px;
+        height: 5px;
+        background-color: $lightBlue;
+        display: inline-block;
+        margin-bottom: 4px;
+        margin-left: 15px;
+
+        &.gray{
+            background-color: #A4A4A4;
+        }   
+
+        @media screen and (min-width: $tablet-BP) {
+            margin-bottom: 8px;
         }
     }
 }

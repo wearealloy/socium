@@ -1,0 +1,87 @@
+section.blog-article{
+    >div{
+        display: grid;
+        grid-template-rows: 1fr auto;
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+
+        @media screen and (min-width: $tablet-BP) {
+            grid-template-columns: 60% 1fr;
+            column-gap: 40px;
+            row-gap: 50px;
+        }
+
+        @media screen and (min-width: $desktop-BP) {
+            grid-template-columns: 70% 1fr;
+            column-gap: 50px;
+        }
+
+        .content{
+
+            img{
+                width: 100%;
+            }
+
+            .article-header{
+                margin: 40px 0;
+                color: $darkBlue;
+            }
+
+        }
+
+        .share-column{
+
+            .share{
+                padding: 20px 0;
+                
+                @media screen and (min-width: $tablet-BP) {
+                    margin-top: 40px;
+                    top: 30px;
+                    position: sticky;
+                    padding: 40px 30px;
+                    text-align: center;
+                    background-color: $lightBlue;
+                }
+        
+    
+                h4, time{
+                    color: $darkBlue;
+                }
+    
+                .line{
+                    width: 50px;
+                    height: 5px;
+                    background-color: #6AACE6;
+                    margin: 20px 0;
+
+                    @media screen and (min-width: $tablet-BP){
+                        margin: 30px auto;
+                    }
+                }
+    
+                .button{
+
+                    @media screen and (min-width: $tablet-BP){
+                        border-color: $white;
+                        color: $white;
+        
+                        &:hover{
+                            background-color: $white;
+                            color: $darkBlue;
+                        }
+                    }
+                }
+    
+            }
+        }
+
+        .back-container{
+            a{
+                color: $lightBlue;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-size: 26px;
+            }
+        }
+    }
+}

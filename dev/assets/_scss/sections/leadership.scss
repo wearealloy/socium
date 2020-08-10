@@ -1,0 +1,22 @@
+section.leadership{
+
+    background: linear-gradient(to right, rgba(27, 50, 93, 1) 40%, rgba(27, 50, 93, 0.7));
+    
+    h3.gray-header{
+        color: $white;
+    }
+
+    .guided{
+        background-color: $white;
+        max-width: 540px;
+        padding: 30px;
+
+        @media screen and (min-width: $tablet-BP){
+            margin-top: -35px;
+        }
+
+        h4{
+            color: $darkBlue;
+        }
+    }
+}

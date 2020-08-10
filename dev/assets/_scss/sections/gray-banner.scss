@@ -1,0 +1,47 @@
+section.gray-banner{
+
+    min-height: 400px;
+    // background-image: url('/media/home/home-banner.jpg');
+    background-size: cover;
+    background-color: $darkGray;
+
+    @media screen and (min-width: $mobile-BP) {
+        min-height: 400px;
+    }
+
+    >div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: inherit;
+        text-align: center;
+    }
+
+    .sub-header{
+        color: #A4A4A4;
+        font-weight: 400;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+
+    .line{
+        width: 45px;
+        height: 4px;
+        background-color: $lightBlue;
+        margin: 30px auto;
+    }
+
+    h1{
+        color: $white;
+        // display: inline-flex;
+        // align-items: center;
+        font-weight: 400;
+        margin-bottom: 0;
+        margin-top: 0;
+        letter-spacing: 2px;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,12 @@
+{% extends "_layout.html" %}
+
+{% block content %}
+
+<main class="template {{ entry.title | lower }}" id="main-content">
+    {% include './sections/blue-banner.html' %}
+    {% include './sections/title-overlap.html' %}
+    {% include './sections/solutions.html' %}
+    {% include './sections/contact-cta.html' %}
+</main>
+
+{% endblock %}

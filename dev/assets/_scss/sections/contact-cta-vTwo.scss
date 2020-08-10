@@ -1,0 +1,42 @@
+section.contact-cta-vTwo{
+
+    >div{
+        @media screen and (max-width: $tablet-BP) {
+            padding-top: 5px;
+        }
+    }
+
+    .cta-container{
+        position: relative;
+        border-top: 1px solid $gray;
+        text-align: center;
+        padding: 50px 0;
+        margin-top: -5px;
+
+        &:before{
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            background-color: $gray;
+            content: '';
+            top: -5px;
+            left: 0;
+        }
+
+        h4{
+            margin-bottom: 10px;
+        }
+
+        p{
+            margin-top: 0;
+            line-height: 1;
+        }
+
+        .button.filled{
+            padding: 0.85em 1.8em 0.75em;
+            &:hover{
+                color: $green;
+            }
+        }
+    }
+}

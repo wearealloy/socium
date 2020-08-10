@@ -93,7 +93,7 @@ section {
 
 	&>div {
 		padding: 4em 0;
-		max-width: 1200px;
+		max-width: 1100px;
         margin: 0 auto;
 
 		@media(min-width: $tablet-BP) {
@@ -112,6 +112,56 @@ ol,ul{
 	li{
 		padding-left: 0.8em;
 		margin-left: -0.8em;
+	}
+}
+
+/*-----------------------------------*\
+	MISC
+\*-----------------------------------*/
+
+div.double-lined, article.double-lined{
+	position: relative;
+	padding-top: 2em;
+	padding-bottom:  calc(2em + 5px);
+	border-bottom: 1px solid $gray;
+
+	@media screen and (min-width: $tablet-BP){
+		padding-top: 4em;
+		padding-bottom: calc(4em + 5px);
+	}
+
+	&:after{
+		content: '';
+		width: 100%;
+		height: 1px;
+		background-color: $gray;
+		position: absolute;
+		bottom: 5px;
+		left: 0;
+	}
+
+	&:nth-last-child(1){
+		margin-bottom: 5px;
+	}
+
+	&:nth-child(1){
+		border-top: 1px solid $gray;
+		padding-top: calc(2em + 5px);
+		margin-top: 5px;
+
+		@media screen and (min-width: $tablet-BP){
+			padding-top: calc(4em + 5px);
+		}
+		
+		&:before{
+			content: '';
+			width: 100%;
+			height: 1px;
+			background-color: $gray;
+			position: absolute;
+			top: 5px;
+			left: 0;
+		}
 	}
 }
 
