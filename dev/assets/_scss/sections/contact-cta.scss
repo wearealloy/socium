@@ -8,7 +8,9 @@ section.contact-cta{
     }
 
     .cta-container{
-        background: #4E4E4E;
+        background-image: url('/media/global/cta-desktop.jpg');
+        background-size: cover;
+        background-position: center;
         color: $white;
         padding: 40px;
         

@@ -30,6 +30,7 @@
 	{% block content %}
     {% endblock %}
 
+	{% include './navigation/main-footer.html' %}
     
 	<script {%if siteUrl %} src="{{ siteUrl }}assets/js/main.js" {% else %} src="../web/assets/js/main.js"{% endif %}></script>
 </body>

@@ -1,6 +1,44 @@
 section.contact-form{
 
+    position: relative;
     background-color: #E3E3E3;
+    padding-top: 200px;
+
+    @media screen and (min-width: $tablet-BP) {
+        padding-top: 0px;
+        
+    }
+
+    &:before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60%;
+        content: '';
+        background-image: url('/media/contact/contact-form-mobile.png');
+        background-position: bottom;
+        background-size: cover;
+
+        @media screen and (min-width: $tablet-BP) {
+            background-image: url('/media/contact/contact-form-desktop.png');
+            height: 100%;
+            width: 60%;
+            right: 0;
+            left: auto;
+            background-position: top left;
+        }
+    }
+
+    >div{
+        position: relative;
+        z-index: 1;
+        margin-top: -100px;
+        @media screen and (min-width: $tablet-BP) {
+            padding-bottom: 100px;
+            margin-top: 0px;
+        }
+    }
 
     p{
         text-align: center;
@@ -34,6 +72,7 @@ section.contact-form{
                 background-color: $white;
                 border-bottom: 2px solid $darkBlue;
                 width: 100%;
+                border-radius: 0;
             }
 
             textarea{

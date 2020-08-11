@@ -1,5 +1,109 @@
 /*----------------------------------------------------------------*\
 		MAIN FOOTER
 \*----------------------------------------------------------------*/
+$footer-BP: 960px;
+
+div.main-footer{
+
+	background-color: $lightBlue;
+	padding: 60px 30px 30px;
+
+	@media screen and (min-width: $footer-BP){
+		padding: 60px 40px 30px;
+	}
+
+	footer{
+		max-width: 1300px;
+		width: 100%;
+		margin: 0 auto;
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+
+		@media screen and (min-width: $footer-BP) {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		.column{
+
+			margin-bottom: 30px;
+
+			@media screen and (min-width: $footer-BP) {
+				margin-bottom: 0;
+			}
+
+			&:nth-last-child(1){
+				margin-bottom: 0px;
+			}
+
+			h5{
+				margin-bottom: 10px;
+				line-height: 1;
+				color: $darkBlue;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+
+				@media screen and (min-width: $footer-BP){
+					margin-bottom: 15px;
+				}
+			}	
+
+			.links-container{
+
+				&.sitemap{
+					display: grid;
+					grid-template-columns: auto auto auto;
+					column-gap: 40px;
+					row-gap: 10px;
+					max-width: 400px;
+				}
+
+				&.contact{
+					display: flex;
+					flex-direction: column;
+	
+					a{
+						margin-bottom: 10px;
+					}
+				}
+
+				a{
+					color: $white;
+					text-decoration: none;
+					line-height: 1.6;
+				}
+			}
+		}
+	}
+
+	.copy-cont{
+		margin-top: 50px;
+
+		@media screen and (min-width: $footer-BP){
+			text-align: center;
+		}
+
+		.logo{
+			width: 180px;
+		}
+
+		p{
+			color: #82B6E5;
+			margin-bottom: 0;
+			font-size: 15px;
+			margin-top: 10px;
+			line-height: 1;
+
+			a{
+				color: #82B6E5;
+				text-decoration: none;
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
 
 

@@ -73,7 +73,7 @@ section.testimonials{
     .company-logos-grid{    
         display: grid;
         grid-template: 1fr 1fr / 1fr 1fr;
-        gap: 40px 40px;
+        gap: 50px 40px;
         justify-content: center;
         align-items: center;
         margin: 0 auto;
@@ -84,12 +84,13 @@ section.testimonials{
         
         @media screen and (min-width: $tablet-BP){
             gap: 20px 40px;
+            padding: 40px 0;
             padding-left: 60px;
             margin-top: 0;
         }
 
         img{
-            max-width: 200px;
+            max-width: 160px;
             margin: auto;
         }
     }

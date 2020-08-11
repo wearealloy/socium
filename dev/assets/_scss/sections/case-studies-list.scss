@@ -33,7 +33,7 @@ section.case-studies-list{
 
             .text{
 
-                background-color: $darkGray;
+                background-color: #5B5B5B;
                 padding: 30px;
                 display: flex;
                 flex-direction: column;
@@ -44,6 +44,7 @@ section.case-studies-list{
                     min-height: 450px;
                     margin-left: -10%;
                     margin-top: 40px;
+                    padding: 50px;
                 }
 
                 h4{

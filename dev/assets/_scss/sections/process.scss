@@ -1,25 +1,45 @@
 section.process{
 
     position: relative;
-    background-size: cover;
-    // background-image: url('/media/home/home-banner.jpg');
-    background-color: $gray;
+    background: linear-gradient(to top, rgba(227, 227, 227, 1), rgba(227, 227, 227, 0.1));
+    padding-top: 300px;
+
+    @media screen and (min-width: $tablet-BP) {
+        padding-top: 0px;
+        background: linear-gradient(to right, rgba(227, 227, 227, 1), rgba(227, 227, 227, 0.1));
+    }
 
 
-    // if we want the image to be programatically grayed out
+    &:before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60%;
+        content: '';
+        background-image: url('/media/about/about-process-mobile.png');
+        background-position: bottom;
+        background-size: cover;
 
-    // &:before{
-    //     content: '';
-    //     height: 100%;
-    //     width: 100%;
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     background-size: cover;
-    //     filter: grayscale(100%);
-    //     z-index: -1;
-    //     background-image: url('/media/home/home-banner.jpg');
-    // }
+        @media screen and (min-width: $tablet-BP) {
+            background-image: url('/media/about/about-process-desktop.png');
+            height: 100%;
+            width: 60%;
+            right: 0;
+            left: auto;
+            background-position: top right;
+        }
+    }
+
+    >div{
+        position: relative;
+        z-index: 1;
+        margin-top: -100px;
+        @media screen and (min-width: $tablet-BP) {
+            padding-bottom: 100px;
+            margin-top: 0px;
+        }
+    }
 
     .gray-header{
         color: $white;

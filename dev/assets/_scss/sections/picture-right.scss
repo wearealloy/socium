@@ -26,10 +26,12 @@ section.picture-right{
 
     .text-container{
         max-width: 420px;
-        padding-top: 30px;
         position: relative;
+        order: 2;
+        margin-top: -15px;
 
         @media screen and (min-width: $tablet-BP){
+            order: unset;
             padding-top: 20px;
             padding-right: 60px;
             margin-left: auto;
@@ -40,6 +42,7 @@ section.picture-right{
         }
 
         h2.gray-header{
+            transform: translateX(-20px);
             
             @media screen and (min-width: $tablet-BP) {
                 position: absolute;
@@ -47,7 +50,7 @@ section.picture-right{
                 left: -40px;
                 // margin: 0 auto;
                 text-align: center;
-                transform: translateY(-38%);
+                transform: translateY(-38%) translateX(0px);
             }
 
             @media screen and (min-width: $desktop-BP){
@@ -73,7 +76,10 @@ section.picture-right{
 
     .image-container{
 
+        order: 1;
+
         @media screen and (min-width: $tablet-BP){
+            order: unset;
             height: 440px;
         }
 

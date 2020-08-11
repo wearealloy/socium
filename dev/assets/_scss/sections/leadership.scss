@@ -1,6 +1,45 @@
 section.leadership{
+    // about-leadership-desktop
+    background: linear-gradient(to top, rgba(27, 50, 93, 1) 40%, rgba(27, 50, 93, 0));
+    position: relative;
+    padding-top: 300px;
 
-    background: linear-gradient(to right, rgba(27, 50, 93, 1) 40%, rgba(27, 50, 93, 0.7));
+    @media screen and (min-width: $tablet-BP) {
+        padding-top: 0px;
+        background: rgb(27, 50, 93);
+    }
+
+    &:before{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 60%;
+        content: '';
+        background-image: url('/media/about/about-leadership-mobile.png');
+        background-position: bottom;
+        background-size: cover;
+        z-index: -1;
+
+        @media screen and (min-width: $tablet-BP) {
+            background-image: url('/media/about/about-leadership-desktop.png');
+            height: 100%;
+            width: 50%;
+            right: 0;
+            z-index: auto;
+            left: auto;
+            background-position: top left;
+        }
+    }
+
+    >div{
+        position: relative;
+        z-index: 1;
+        margin-top: -100px;
+        @media screen and (min-width: $tablet-BP) {
+            margin-top: 0px;
+        }
+    }
     
     h3.gray-header{
         color: $white;

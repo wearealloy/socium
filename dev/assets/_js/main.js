@@ -12,4 +12,13 @@ $('.testimonials-slider').slick({
     dots: true
 });
 
+const menu = document.querySelector(".menu");
+const links = document.querySelector(".links-container");
+
+menu.addEventListener("click", () => {
+  menu.classList.toggle("active");
+  links.classList.toggle("open");
+});
+
+
 

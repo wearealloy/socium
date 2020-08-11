@@ -9,10 +9,12 @@ section.picture-left{
         display: grid;
         max-width: 1300px;
         padding-top: 0;
+        padding-bottom: 0;
 
         @media screen and (min-width: $tablet-BP) {
             padding-left: 0;
             padding-right: 0;
+            padding-bottom: 4em;
             margin-right: auto;
             // column-gap: 60px;
             grid-template-columns: 52% 1fr;
@@ -27,7 +29,7 @@ section.picture-left{
 
     .text-container{
         max-width: 420px;
-        padding-top: 30px;
+        margin-top: -15px;
 
         @media screen and (min-width: $tablet-BP){
             padding-top: 20px;
@@ -40,6 +42,7 @@ section.picture-left{
 
         h2.gray-header{
             color: $gray;
+            transform: translateX(-20px);
 
             @media screen and (min-width: $tablet-BP) {
                 position: absolute;
@@ -48,7 +51,7 @@ section.picture-left{
                 right: 0;
                 margin: 0 auto;
                 text-align: center;
-                transform: translateY(-40%);
+                transform: translateY(-40%) translateX(0px);
             }
         }
 

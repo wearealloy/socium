@@ -29,7 +29,7 @@ $sectionPaddingTop-small: 30px;
 \*-----------------------------------*/
 $mobile-small-BP: 400px;
 $mobile-BP: 640px;
-$tablet-BP: 768px;
+$tablet-BP: 820px;
 $desktop-BP: 1024px;
 $desktop-big-BP: 1200px;
 
@@ -88,7 +88,7 @@ section {
 	padding: 0 2em;
 
 	&:nth-of-type(1){
-        padding-top: 55px;
+        padding-top: 78px;
 
         @media screen and (min-width: $tablet-BP) {
             padding-top: 114px;
