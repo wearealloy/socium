@@ -1,23 +1,13 @@
 <section class="testimonials">
     <div>
         <div class="slider-container">
-            <h3 class="ff-sansSerif-alt">What Our Clients Say</h3>
+            <h3 class="ff-sansSerif-alt">{{entry.testimonialsHeader}}</h3>
             <div class="testimonials-slider">
+                {% for testimonial in entry.homeTestimonials %}
                 <div class="slide">
-                    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras mattis
-                        consectetur purus sit amet fermentum. Nulla vitae elit libero, a pharetra augue. Praesent
-                        commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+                    <p>{{testimonial.testimonial}}</p>
                 </div>
-                <div class="slide">
-                    <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Morbi leo risus, porta ac
-                        consectetur ac, vestibulum at eros. Donec ullamcorper nulla non metus auctor fringilla. Donec
-                        sed odio dui.</p>
-                </div>
-                <div class="slide">
-                    <p>Aenean lacinia bibendum nulla sed consectetur. Fusce dapibus, tellus ac cursus commodo, tortor
-                        mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cum sociis natoque penatibus
-                        et magnis dis parturient montes, nascetur ridiculus mus.</p>
-                </div>
+                {% endfor %}
             </div>
         </div>
         <div class="company-logos-grid">

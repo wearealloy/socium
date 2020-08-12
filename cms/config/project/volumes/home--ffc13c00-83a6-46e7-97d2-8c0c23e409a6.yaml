@@ -1,0 +1,8 @@
+handle: home
+hasUrls: true
+name: Home
+settings:
+  path: '@mediaBasePath/home'
+sortOrder: 1
+type: craft\volumes\Local
+url: '@mediaBaseUrl/home'

@@ -1,3 +1,5 @@
+{% set studies = craft.entries.section('caseStudy').all() %}
+
 <section class="case-studies-list">
     <div>
 
@@ -5,28 +7,19 @@
 
         <div class="list-container">
 
-            <div class="case-study">
-                <div class="img-container">
-                    <img src="/media/case-studies/case-study-1.jpg" alt="">
+            {% for study in studies %}
+                {% set studyImage = study.caseStudyImage.one() %}
+                <div class="case-study">
+                    <div class="img-container">
+                        <img src="{{studyImage.url}}" alt="{{studyImage.title}}">
+                    </div>
+                    <div class="text">
+                        <h4 class="ff-sansSerif-alt">{{study.caseStudyType}} <span class="blue-line gray"></span></h4>
+                        <h3 class="h4">{{study.title}}</h3>
+                        <a class="button filled" href="{{study.url}}">View Case Study</a>
+                    </div>
                 </div>
-                <div class="text">
-                    <h4 class="ff-sansSerif-alt">Leadership Advisory <span class="blue-line gray"></span></h4>
-                    <h3 class="h4">How Socium built A Powerful Infrastructure to Support the Massice Growth of Birch Resources
-                    </h3>
-                    <a class="button filled" href="/case-study">View Case Study</a>
-                </div>
-            </div>
-
-            <div class="case-study">
-                <div class="img-container">
-                    <img src="/media/case-studies/case-study-2.jpg" alt="">
-                </div>
-                <div class="text">
-                    <h4 class="ff-sansSerif-alt">Incident Response <span class="blue-line gray"></span> </h4>
-                    <h3 class="h4">Nullam id dolor id nibh ultricies vehicula ut id elit.</h3>
-                    <a class="button filled" href="/case-study">View Case Study</a>
-                </div>
-            </div>
+            {% endfor %}
 
         </div>
     </div>

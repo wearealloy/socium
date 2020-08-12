@@ -1,0 +1,17 @@
+contentColumnType: text
+fieldGroup: 3e9522a7-7679-4e9a-84ae-452b9d7d8a2f
+handle: whiteBigHeaderTwo
+instructions: ''
+name: 'White Big Header Two'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,0 +1,17 @@
+contentColumnType: string(48)
+fieldGroup: d66444ad-ced1-4ef4-a82a-c13bd813737d
+handle: phone
+instructions: ''
+name: Phone
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: 12
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: 123-123-1212
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

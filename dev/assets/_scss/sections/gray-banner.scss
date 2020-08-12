@@ -8,7 +8,9 @@ section.gray-banner{
         min-height: 400px;
     }
     
-    &:before{
+    div.bkg-img{
+        padding: 0;
+        margin: 0;
         position: absolute;
         top: 0;
         left: 0;
@@ -16,13 +18,12 @@ section.gray-banner{
         content: '';
         width: 100%;
         height: 100%;
-        background-image: url('/media/case-studies/case-study-1.jpg');
         background-size: cover;
         background-position: center;
         filter: grayscale(100%);
     }
 
-    >div{
+    >div:not(.bkg-img){
         display: flex;
         flex-direction: column;
         justify-content: center;

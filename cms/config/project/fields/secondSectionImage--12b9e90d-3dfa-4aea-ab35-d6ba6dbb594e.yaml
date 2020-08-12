@@ -1,0 +1,29 @@
+contentColumnType: string
+fieldGroup: 46112973-481b-41f4-b153-4e91c59e2d19
+handle: secondSectionImage
+instructions: 'Image Size: 750 x 500'
+name: 'Second Section Image'
+searchable: true
+settings:
+  allowSelfRelations: ''
+  allowedKinds:
+    - image
+  defaultUploadLocationSource: 'volume:ffc13c00-83a6-46e7-97d2-8c0c23e409a6'
+  defaultUploadLocationSubpath: ''
+  limit: '1'
+  localizeRelations: false
+  restrictFiles: '1'
+  selectionLabel: ''
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:ffc13c00-83a6-46e7-97d2-8c0c23e409a6'
+  singleUploadLocationSubpath: ''
+  source: null
+  sources: '*'
+  targetSiteId: null
+  useSingleFolder: true
+  validateRelatedElements: ''
+  viewMode: large
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

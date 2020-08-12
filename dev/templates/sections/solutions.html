@@ -1,96 +1,29 @@
+{% set solutions = entry.solutions.all() %}
 <section class="solutions">
     <div>
-        <div class="solution double-lined">
-            <div class="solution-desc">
-                <h3 class="h2 ff-sansSerif-alt">Leadership Advisory</h3>
-                <div class="info">
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras justo odio, dapibus ac
-                        facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-                        Donec ullamcorper nulla non metus auctor fringilla. Vivamus sagittis lacus vel augue laoreet
-                        rutrum faucibus dolor auctor.</p>
-                    <div class="solutions-expertise">
-                        <h5>Our Expertise</h5>
-                        <ul>
-                            <li>Strategy, planning & management</li>
-                            <li>Interim. fractional and Project-based Leadership</li>
-                            <li>Build internal bench</li>
-                            <li>Manage FTE Hiring Process where appropriate</li>
-                        </ul>
+        {% for solution in solutions %}
+            {% set study = solution.caseStudy.one() %}
+            <div class="solution double-lined">
+                <div class="solution-desc">
+                    <h3 class="h2 ff-sansSerif-alt">{{solution.header}}</h3>
+                    <div class="info">
+                        {{solution.description}}
+                        <div class="solutions-expertise">
+                            <h5>Our Expertise</h5>
+                            <ul>
+                                {% for row in solution.expertise %}
+                                    <li>{{ row.expertiseItem }}</li>
+                                {% endfor %}
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="button-cont">
-                <a href="#" class="button">Read Case Study</a>
-            </div>
-        </div>
-        <div class="solution double-lined">
-            <div class="solution-desc">
-                <h3 class="h2 ff-sansSerif-alt">Leadership Advisory</h3>
-                <div class="info">
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras justo odio, dapibus ac
-                        facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-                        Donec ullamcorper nulla non metus auctor fringilla. Vivamus sagittis lacus vel augue laoreet
-                        rutrum faucibus dolor auctor.</p>
-                    <div class="solutions-expertise">
-                        <h5>Our Expertise</h5>
-                        <ul>
-                            <li>Strategy, planning & management</li>
-                            <li>Interim. fractional and Project-based Leadership</li>
-                            <li>Build internal bench</li>
-                            <li>Manage FTE Hiring Process where appropriate</li>
-                        </ul>
-                    </div>
+                {% if study %}
+                <div class="button-cont">
+                    <a href="{{study.url}}" class="button">Read Case Study</a>
                 </div>
+                {% endif %}
             </div>
-            <div class="button-cont">
-                <a href="#" class="button">Read Case Study</a>
-            </div>
-        </div>
-        <div class="solution double-lined">
-            <div class="solution-desc">
-                <h3 class="h2 ff-sansSerif-alt">Leadership Advisory</h3>
-                <div class="info">
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras justo odio, dapibus ac
-                        facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-                        Donec ullamcorper nulla non metus auctor fringilla. Vivamus sagittis lacus vel augue laoreet
-                        rutrum faucibus dolor auctor.</p>
-                    <div class="solutions-expertise">
-                        <h5>Our Expertise</h5>
-                        <ul>
-                            <li>Strategy, planning & management</li>
-                            <li>Interim. fractional and Project-based Leadership</li>
-                            <li>Build internal bench</li>
-                            <li>Manage FTE Hiring Process where appropriate</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="button-cont">
-                <a href="#" class="button">Read Case Study</a>
-            </div>
-        </div>
-        <div class="solution double-lined">
-            <div class="solution-desc">
-                <h3 class="h2 ff-sansSerif-alt">Leadership Advisory</h3>
-                <div class="info">
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Cras justo odio, dapibus ac
-                        facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-                        Donec ullamcorper nulla non metus auctor fringilla. Vivamus sagittis lacus vel augue laoreet
-                        rutrum faucibus dolor auctor.</p>
-                    <div class="solutions-expertise">
-                        <h5>Our Expertise</h5>
-                        <ul>
-                            <li>Strategy, planning & management</li>
-                            <li>Interim. fractional and Project-based Leadership</li>
-                            <li>Build internal bench</li>
-                            <li>Manage FTE Hiring Process where appropriate</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="button-cont">
-                <a href="#" class="button">Read Case Study</a>
-            </div>
-        </div>
+        {% endfor %}
     </div>
 </section>

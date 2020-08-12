@@ -1,0 +1,29 @@
+contentColumnType: string
+fieldGroup: 3e9522a7-7679-4e9a-84ae-452b9d7d8a2f
+handle: certificateLogos
+instructions: ''
+name: 'Certificate Logos'
+searchable: true
+settings:
+  allowSelfRelations: ''
+  allowedKinds:
+    - image
+  defaultUploadLocationSource: 'volume:ffc13c00-83a6-46e7-97d2-8c0c23e409a6'
+  defaultUploadLocationSubpath: ''
+  limit: '3'
+  localizeRelations: false
+  restrictFiles: '1'
+  selectionLabel: 'Add certificate logo'
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:6234df46-f16f-46f3-a19f-2a89db4101e3'
+  singleUploadLocationSubpath: certificates
+  source: null
+  sources: '*'
+  targetSiteId: null
+  useSingleFolder: true
+  validateRelatedElements: ''
+  viewMode: list
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

@@ -1,0 +1,22 @@
+contentColumnType: text
+fieldGroup: 46112973-481b-41f4-b153-4e91c59e2d19
+handle: secondSectionParagraph
+instructions: ''
+name: 'Second Section Paragraph'
+searchable: true
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  cleanupHtml: true
+  columnType: text
+  purifierConfig: ''
+  purifyHtml: '1'
+  redactorConfig: Simple.json
+  removeEmptyTags: '1'
+  removeInlineStyles: '1'
+  removeNbsp: '1'
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

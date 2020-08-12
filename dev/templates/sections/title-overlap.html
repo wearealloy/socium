@@ -1,9 +1,7 @@
 <section class="title-overlap">
     <div>
-        <h3 class="gray-header">Who We Are</h3>
-        <p>Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas
-            faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit. Vestibulum id ligula porta
-            felis euismod semper. Sed posuere consectetur est at lobortis.</p>
+        <h3 class="gray-header">{{entry.bigGrayHeaderOne}}</h3>
+        {{entry.firstSectionParagraph}}
 
         {% if entry.title | lower == 'about' %}
             {% include './fragments/img-blueSq.html' %}

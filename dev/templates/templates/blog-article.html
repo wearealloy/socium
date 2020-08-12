@@ -2,35 +2,20 @@
 
 {% block content %}
 
+{% set blogImage = entry.featuredImage.one() %}
+
 <main role="article" itemscope itemtype="http://schema.org/Article" class="template {{ entry.title | lower }}" id="main-content">
     <section class="blog-article">
         <div>
             <div class="content">
-                <img itemprop="image" src="/media/blog/blog-1.jpg" alt="">
-                <h1 itemprop="name headline" class="h4 article-header">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</h1>
-                <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada
-                    magna mollis euismod. Nullam quis risus eget urna mollis ornare vel eu leo. Integer posuere erat a
-                    ante venenatis dapibus posuere velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl
-                    consectetur et. Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis
-                    euismod.</p>
-                <h5>Cras justo odio, dapibus ac facilisis in, egestas eget quam.</h5>
-                <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Praesent commodo
-                    cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum.
-                    Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio, dapibus ac
-                    facilisis in, egestas eget quam.</p>
-                <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Duis mollis, est non commodo
-                    luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas faucibus mollis
-                    interdum. Maecenas sed diam eget risus varius blandit sit amet non magna. Curabitur blandit tempus
-                    porttitor.</p>
-                <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras
-                    mattis consectetur purus sit amet fermentum. Etiam porta sem malesuada magna mollis euismod. Vivamus
-                    sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna
-                    mollis euismod.</p>
+                <img itemprop="image" src="{{blogImage.url}}" alt="{{blogImage.title}}">
+                <h1 itemprop="name headline" class="h4 article-header">{{entry.title}}</h1>
+                {{entry.blogPostContent}}
             </div>
             <div class="share-column">
                 <div class="share">
-                    <h4 itemprop="author" class="h5">By Jeff Baker</h4>
-                    <time itemprop="datePublished">05/05/2020</time>
+                    <h4 itemprop="author" class="h5">By {{entry.blogPostAuthor}}</h4>
+                    <time itemprop="datePublished">{{ entry.postDate | date("m/d/yy")}}</time>
                     <div class="line"></div>
                     <a href="#" class="button">Share on Linkedin</a>
                 </div>

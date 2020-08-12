@@ -1,0 +1,14 @@
+contentColumnType: string
+fieldGroup: ca306853-caf7-4a55-83c7-657e56bebaed
+handle: solutions
+instructions: ''
+name: Solutions
+searchable: true
+settings:
+  contentTable: '{{%matrixcontent_solutions}}'
+  maxBlocks: ''
+  minBlocks: ''
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

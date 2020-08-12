@@ -1,0 +1,23 @@
+contentColumnType: text
+fieldGroup: 1545bc45-0318-4f91-aadb-295ecf175197
+handle: blogPostContent
+instructions: ''
+name: 'Blog Post Content'
+searchable: true
+settings:
+  availableTransforms: '*'
+  availableVolumes:
+    - ee930671-9d76-4e6f-ac78-ad15ac8d3da4
+  cleanupHtml: true
+  columnType: text
+  purifierConfig: ''
+  purifyHtml: '1'
+  redactorConfig: ''
+  removeEmptyTags: '1'
+  removeInlineStyles: '1'
+  removeNbsp: '1'
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

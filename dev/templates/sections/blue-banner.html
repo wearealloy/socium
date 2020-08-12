@@ -1,5 +1,6 @@
-<section class="blue-banner">
+{% set blueImage = entry.blueBannerImage.one() %}
+<section class="blue-banner" style="background-image: url('{{blueImage.url}}');">
     <div>
-        <h1 class="h3">Tranforming business through technology. <span class="blue-line"></span> </h1>
+        <h1 class="h3">{{entry.blueBannerHeader}} <span class="blue-line"></span> </h1>
     </div>
 </section>

@@ -1,0 +1,73 @@
+fieldLayouts:
+  a6123d22-5b6d-4c9f-9050-1cb0897aa318:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: ''
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: f25020e2-0b2e-4522-a23a-1b69cb2fcfd1
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: feba505b-7782-4ba9-ad81-4067891569ad
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 3586359e-a0e4-415f-a9db-e0423af66d41
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: bd38238e-edf9-4565-acb7-23b607eff3b9
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 889fbe23-e9ec-4467-87ac-a75cab941488
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 8411594f-9157-494d-8241-5d3477deb9cf
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: f7572133-05e1-4904-93bf-7906d3cd0e87
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 5063e53e-8760-4ad1-9782-38c17df6c733
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 383ee98c-1210-475e-9d18-b675754c46ed
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: f66a038e-345f-4410-aafa-2e0f3bf0460d
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 3a4239fe-fa4d-4f64-ab30-c35143d46e14
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 64d081a9-b47f-4055-9fa6-64103f791ebc
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 0024c2f0-e30a-495e-8d48-72a701000e8b
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 936ae16d-196e-46f6-968d-b3987770e671
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: About
+        sortOrder: 1
+handle: about
+hasTitleField: false
+name: About
+section: 67e20428-667a-4a9c-8c3d-1d30e7984e4a
+sortOrder: 1
+titleFormat: '{section.name|raw}'

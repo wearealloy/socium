@@ -1,0 +1,8 @@
+handle: global
+hasUrls: true
+name: Global
+settings:
+  path: '@mediaBasePath/global'
+sortOrder: 4
+type: craft\volumes\Local
+url: '@mediaBaseUrl/global'

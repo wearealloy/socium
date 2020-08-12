@@ -1,0 +1,30 @@
+contentColumnType: string
+fieldGroup: c4089029-5045-435d-9c59-e9f595dc023e
+handle: caseStudyImage
+instructions: "Gray tint applied programmatically\r\nImage Size: 1440  ×  720"
+name: 'Case Study Image'
+searchable: true
+settings:
+  allowSelfRelations: ''
+  allowedKinds:
+    - image
+  defaultUploadLocationSource: 'volume:34762abf-567c-4917-999f-d6ee1bafeabb'
+  defaultUploadLocationSubpath: ''
+  limit: '1'
+  localizeRelations: false
+  restrictFiles: '1'
+  selectionLabel: ''
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:ffc13c00-83a6-46e7-97d2-8c0c23e409a6'
+  singleUploadLocationSubpath: ''
+  source: null
+  sources:
+    - 'volume:34762abf-567c-4917-999f-d6ee1bafeabb'
+  targetSiteId: null
+  useSingleFolder: false
+  validateRelatedElements: ''
+  viewMode: large
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

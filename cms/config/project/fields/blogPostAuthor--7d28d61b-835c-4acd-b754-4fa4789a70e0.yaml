@@ -1,0 +1,17 @@
+contentColumnType: text
+fieldGroup: 1545bc45-0318-4f91-aadb-295ecf175197
+handle: blogPostAuthor
+instructions: ''
+name: 'Blog Post Author'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,0 +1,29 @@
+contentColumnType: string
+fieldGroup: cea2dac9-73e0-4cd8-b0d5-e75f516aa4b1
+handle: blueBannerImage
+instructions: "Image must come with blue tint\r\nImage size: 1440 x 600"
+name: 'Blue Banner Image'
+searchable: true
+settings:
+  allowSelfRelations: ''
+  allowedKinds:
+    - image
+  defaultUploadLocationSource: 'volume:ffc13c00-83a6-46e7-97d2-8c0c23e409a6'
+  defaultUploadLocationSubpath: ''
+  limit: '1'
+  localizeRelations: false
+  restrictFiles: '1'
+  selectionLabel: ''
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  singleUploadLocationSource: 'volume:0afb5fc3-d7d4-4252-8686-5ff0db91a167'
+  singleUploadLocationSubpath: banner
+  source: null
+  sources: '*'
+  targetSiteId: null
+  useSingleFolder: true
+  validateRelatedElements: ''
+  viewMode: large
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Assets

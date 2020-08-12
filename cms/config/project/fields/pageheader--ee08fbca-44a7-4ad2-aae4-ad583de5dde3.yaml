@@ -1,0 +1,18 @@
+contentColumnType: text
+fieldGroup: cea2dac9-73e0-4cd8-b0d5-e75f516aa4b1
+handle: pageheader
+instructions: ''
+name: PageHeader
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '2'
+  multiline: '1'
+  placeholder: ''
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

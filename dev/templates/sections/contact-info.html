@@ -2,19 +2,17 @@
     <div>
         <div class="contact">
             <h4 class="h5">Phone</h4>
-            <a href="tel:">832-328-7978</a>
+            <a href="tel:{{entry.phone}}">{{entry.phone}}</a>
         </div>
         <div class="contact">
             <h4 class="h5">Email</h4>
-            <a href="mailto:info@sociumsolutionsllc.com">info@sociumsolutionsllc.com</a>
+            <a href="mailto:{{entry.email}}">{{entry.email}}</a>
         </div>
         <div class="contact">
             <h4 class="h5">Address</h4>
-            <a href="">
-                116 Shadow Creek Parkway <br>
-                Suite 111-522 <br>
-                Pearland, Texas 77584
-            </a>
+            {% for row in entry.address %}
+            <a href="{{row.googleMapsLink}}">{{ row.address | nl2br}}</a>
+            {% endfor %}
         </div>
     </div>
 </section>

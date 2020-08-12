@@ -25,7 +25,15 @@ section.hero{
             p{
                 font-weight: normal;
                 margin-bottom: 8px;
+
+                // &:nth-child(2){
+                //     font-size: inherit;
+                // }
             }
+        }
+
+        .button.filled{
+            padding: 0.85em 1.8em 0.75em;
         }
     }
 }

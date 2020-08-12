@@ -1,0 +1,21 @@
+fieldLayouts:
+  333ce7c4-4f82-4663-a3d6-c000b89d0bb8:
+    tabs:
+      -
+        fields:
+          aaf55739-9a3c-403d-81ec-c16ad7cc683a:
+            required: false
+            sortOrder: 4
+          df884731-6e7e-4d65-9419-6b01d0947c4b:
+            required: false
+            sortOrder: 1
+          e6194389-9006-4541-ad54-4018a6f12272:
+            required: false
+            sortOrder: 2
+          f0ca811a-4071-4b87-bd26-f72afa60f1d0:
+            required: false
+            sortOrder: 3
+        name: Info
+        sortOrder: 1
+handle: sociumInformation
+name: 'Socium Information'

@@ -1,0 +1,17 @@
+contentColumnType: text
+fieldGroup: cea2dac9-73e0-4cd8-b0d5-e75f516aa4b1
+handle: blueBannerHeader
+instructions: ''
+name: 'Blue Banner Header'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

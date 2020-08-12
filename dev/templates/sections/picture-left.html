@@ -1,19 +1,16 @@
+{% set imageLeft = entry.firstSectionImage.one() %}
 <section class="picture-left">
     <div>
         {% include './fragments/blue-phrase.html' %}
     </div>
     <div class="grid">
         <div class="image-container">
-            <img src="/media/home/home-together.jpg" alt="">
+            <img src="{{imageLeft.url}}" alt="{{imageLeft.title}}">
         </div>
         <div class="text-container">
-            <h2 class="gray-header ff-sansSerif-alt">Together</h2>
-            <h4>Moving your business forward.</h4>
-            <p>
-                Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean eu leo
-                quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at
-                lobortis. Fusce dapibus, tellus ac cursus commodo.
-            </p>
+            <h2 class="gray-header ff-sansSerif-alt">{{entry.bigGrayHeaderOne}}</h2>
+            <h4>{{entry.firstSectionSubheader}}</h4>
+            <p>{{entry.firstSectionParagraph}}</p>
             <a href="#" class="button">Learn More</a>
         </div>
     </div>

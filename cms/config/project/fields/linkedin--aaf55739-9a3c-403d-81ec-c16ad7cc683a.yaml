@@ -1,0 +1,12 @@
+contentColumnType: string(255)
+fieldGroup: d66444ad-ced1-4ef4-a82a-c13bd813737d
+handle: linkedin
+instructions: ''
+name: LinkedIn
+searchable: true
+settings:
+  maxLength: '255'
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

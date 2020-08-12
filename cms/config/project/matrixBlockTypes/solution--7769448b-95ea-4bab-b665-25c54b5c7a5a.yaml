@@ -1,0 +1,125 @@
+field: 53651d11-5fc5-49a0-b0c0-0fa60e3d42d6
+fieldLayouts:
+  ecca21ea-37e7-49d1-8202-6109120c07f0:
+    tabs:
+      -
+        fields:
+          5e83e109-535d-4b0c-a2b9-b09e1345d2e4:
+            required: false
+            sortOrder: 1
+          688cc85a-64da-4e7a-8762-f1a88c3197d0:
+            required: false
+            sortOrder: 4
+          a0734fce-32be-48b3-b9a1-5afcc0de7419:
+            required: false
+            sortOrder: 2
+          e263164d-20f5-423d-bdc5-2ec23929a640:
+            required: false
+            sortOrder: 3
+        name: Content
+        sortOrder: 1
+fields:
+  5e83e109-535d-4b0c-a2b9-b09e1345d2e4:
+    contentColumnType: text
+    fieldGroup: null
+    handle: header
+    instructions: ''
+    name: Header
+    searchable: true
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: ''
+      columnType: null
+      initialRows: '4'
+      multiline: ''
+      placeholder: ''
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  688cc85a-64da-4e7a-8762-f1a88c3197d0:
+    contentColumnType: string
+    fieldGroup: null
+    handle: caseStudy
+    instructions: ''
+    name: 'Case Study'
+    searchable: true
+    settings:
+      allowSelfRelations: ''
+      limit: '1'
+      localizeRelations: false
+      selectionLabel: 'Add Case Study'
+      source: null
+      sources:
+        - 'section:365a3761-292b-4a65-bbe6-8c4d40834833'
+      targetSiteId: null
+      validateRelatedElements: ''
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  a0734fce-32be-48b3-b9a1-5afcc0de7419:
+    contentColumnType: text
+    fieldGroup: null
+    handle: description
+    instructions: ''
+    name: Description
+    searchable: true
+    settings:
+      availableTransforms: '*'
+      availableVolumes: '*'
+      cleanupHtml: true
+      columnType: text
+      purifierConfig: ''
+      purifyHtml: '1'
+      redactorConfig: Simple.json
+      removeEmptyTags: '1'
+      removeInlineStyles: '1'
+      removeNbsp: '1'
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+  e263164d-20f5-423d-bdc5-2ec23929a640:
+    contentColumnType: text
+    fieldGroup: null
+    handle: expertise
+    instructions: ''
+    name: Expertise
+    searchable: true
+    settings:
+      addRowLabel: 'Add expertise'
+      columnType: text
+      columns:
+        __assoc__:
+          -
+            - col1
+            -
+              __assoc__:
+                -
+                  - heading
+                  - 'Expertise Item'
+                -
+                  - handle
+                  - expertiseItem
+                -
+                  - width
+                  - ''
+                -
+                  - type
+                  - singleline
+      defaults:
+        -
+          __assoc__:
+            -
+              - col1
+              - ''
+      maxRows: ''
+      minRows: '1'
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Table
+handle: solution
+name: Solution
+sortOrder: 1

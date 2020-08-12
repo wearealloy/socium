@@ -1,0 +1,73 @@
+fieldLayouts:
+  1270a0d2-2816-49de-b875-5d8776053ede:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: ''
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: 9759f01d-f128-416a-8d7e-fb30d3871eff
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: ee08fbca-44a7-4ad2-aae4-ad583de5dde3
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: be8ade1e-3182-40b8-9bb1-b7b0d6ba3f41
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 3586359e-a0e4-415f-a9db-e0423af66d41
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 381e4d3a-5207-44a8-a58a-758533ac1bd2
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: bd38238e-edf9-4565-acb7-23b607eff3b9
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 2b99c1c4-67ff-44b3-80b8-3976e3ceddfd
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 9e2d9172-988e-48dd-85b5-1a17676a9d19
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: a8e312ab-32a6-4d10-8563-d9f72f68a4ca
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 74afe4b4-7da7-4727-af11-e6519d082668
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: 12b9e90d-3dfa-4aea-ab35-d6ba6dbb594e
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: af619b86-7d8a-4414-a02b-6b5e7965abac
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: ee661dd8-7b4c-4088-8272-ba76dcce386b
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: e7306afa-ad17-4888-b849-05cab2553c4e
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: Home
+        sortOrder: 1
+handle: home
+hasTitleField: false
+name: Home
+section: 2669a45e-e9dd-42d1-a5c9-1f97210f7811
+sortOrder: 1
+titleFormat: '{section.name|raw}'

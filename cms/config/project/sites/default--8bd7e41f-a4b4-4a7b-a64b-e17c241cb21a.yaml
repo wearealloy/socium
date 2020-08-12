@@ -1,0 +1,8 @@
+baseUrl: $DEFAULT_SITE_URL
+handle: default
+hasUrls: true
+language: en-US
+name: Socium
+primary: true
+siteGroup: b67985ca-b2ef-4785-8f68-aa5dbfd94609
+sortOrder: 1

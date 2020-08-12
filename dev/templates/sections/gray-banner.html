@@ -1,7 +1,9 @@
+{% set grayImage = entry.caseStudyImage.one() %}
 <section class="gray-banner">
+    <div class="bkg-img" style="background-image: url('{{grayImage.url}}');"></div>
     <div>
-        <h2 class="h4 sub-header ff-sansSerif-alt">Leadership Advisory</h2>
+        <h2 class="h4 sub-header ff-sansSerif-alt">{{entry.caseStudyType}}</h2>
         <div class="line"></div>
-        <h1 class="h3">Maecenas faucibus mollis interdum. Maecenas sed diam eget risus varius blandit.</h1>
+        <h1 class="h3">{{entry.title}}</h1>
     </div>
 </section>

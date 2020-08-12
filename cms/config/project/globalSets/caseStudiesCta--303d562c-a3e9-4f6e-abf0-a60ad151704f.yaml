@@ -1,0 +1,15 @@
+fieldLayouts:
+  0fb2faa8-bd17-43bd-b7ca-9a831ee87003:
+    tabs:
+      -
+        fields:
+          20d5f173-f5b8-4086-ad45-368ea3f06c73:
+            required: false
+            sortOrder: 2
+          c3accd9e-e693-40ac-94c1-d2ab439fb08f:
+            required: false
+            sortOrder: 1
+        name: CTA
+        sortOrder: 1
+handle: caseStudiesCta
+name: 'Case Studies CTA'

@@ -1,0 +1,22 @@
+contentColumnType: text
+fieldGroup: c4089029-5045-435d-9c59-e9f595dc023e
+handle: caseStudyContent
+instructions: ''
+name: 'Case Study Content'
+searchable: true
+settings:
+  availableTransforms: '*'
+  availableVolumes: ''
+  cleanupHtml: true
+  columnType: text
+  purifierConfig: ''
+  purifyHtml: '1'
+  redactorConfig: Standard.json
+  removeEmptyTags: '1'
+  removeInlineStyles: '1'
+  removeNbsp: '1'
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

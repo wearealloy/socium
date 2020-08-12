@@ -1,0 +1,8 @@
+handle: blogPosts
+hasUrls: true
+name: 'Blog Posts'
+settings:
+  path: '@mediaBasePath/blog'
+sortOrder: 3
+type: craft\volumes\Local
+url: '@mediaBaseUrl/blog'

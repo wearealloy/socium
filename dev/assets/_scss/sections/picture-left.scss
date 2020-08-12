@@ -4,6 +4,13 @@ section.picture-left{
         padding-left: 0;
     }
 
+    div.blue-phrase{
+        @media screen and (min-width: $tablet-BP){
+            padding-left: 4em;
+            max-width: calc(1100px + 4em);
+        }
+    }
+
     >div.grid{
 
         display: grid;

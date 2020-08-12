@@ -1,0 +1,8 @@
+handle: caseStudies
+hasUrls: true
+name: 'Case Studies'
+settings:
+  path: '@mediaBasePath/case-studies'
+sortOrder: 5
+type: craft\volumes\Local
+url: '@mediaBaseUrl/case-studies'

@@ -1,0 +1,37 @@
+fieldLayouts:
+  1ab2aace-585d-4284-9c5d-151029fa9d7b:
+    tabs:
+      -
+        elements:
+          -
+            instructions: null
+            label: ''
+            type: craft\fieldlayoutelements\EntryTitleField
+          -
+            fieldUid: f25020e2-0b2e-4522-a23a-1b69cb2fcfd1
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: feba505b-7782-4ba9-ad81-4067891569ad
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: be8ade1e-3182-40b8-9bb1-b7b0d6ba3f41
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: d312722c-472f-40d2-aa8f-d8ba26fd1991
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+          -
+            fieldUid: f5f54b99-adcf-4624-b3bd-0644ed8b3b48
+            required: false
+            type: craft\fieldlayoutelements\CustomField
+        name: 'Case Studies Landing'
+        sortOrder: 1
+handle: caseStudiesLanding
+hasTitleField: false
+name: 'Case Studies'
+section: 3e4a927d-56bd-4241-813b-7f4c16a01b93
+sortOrder: 1
+titleFormat: '{section.name|raw}'

@@ -1,0 +1,22 @@
+contentColumnType: text
+fieldGroup: 3e9522a7-7679-4e9a-84ae-452b9d7d8a2f
+handle: processParagraphOne
+instructions: ''
+name: 'Process Paragraph One'
+searchable: true
+settings:
+  availableTransforms: '*'
+  availableVolumes: '*'
+  cleanupHtml: true
+  columnType: text
+  purifierConfig: ''
+  purifyHtml: '1'
+  redactorConfig: Simple.json
+  removeEmptyTags: '1'
+  removeInlineStyles: '1'
+  removeNbsp: '1'
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

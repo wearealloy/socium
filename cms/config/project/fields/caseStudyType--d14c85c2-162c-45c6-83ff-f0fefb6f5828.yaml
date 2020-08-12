@@ -1,0 +1,17 @@
+contentColumnType: text
+fieldGroup: c4089029-5045-435d-9c59-e9f595dc023e
+handle: caseStudyType
+instructions: ''
+name: 'Case Study Type'
+searchable: true
+settings:
+  byteLimit: null
+  charLimit: null
+  code: ''
+  columnType: null
+  initialRows: '4'
+  multiline: ''
+  placeholder: ''
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
