@@ -1,6 +1,6 @@
 {% set studies = craft.entries.section('caseStudy').all() %}
 
-<section class="case-studies-list">
+<section class="case-studies-list nav-wp">
     <div>
 
         {% include './fragments/blue-phrase.html' %}
@@ -10,10 +10,10 @@
             {% for study in studies %}
                 {% set studyImage = study.caseStudyImage.one() %}
                 <div class="case-study">
-                    <div class="img-container">
+                    <div class="img-container" data-animateInView>
                         <img src="{{studyImage.url}}" alt="{{studyImage.title}}">
                     </div>
-                    <div class="text">
+                    <div class="text" data-animateInView>
                         <h4 class="ff-sansSerif-alt">{{study.caseStudyType}} <span class="blue-line gray"></span></h4>
                         <h3 class="h4">{{study.title}}</h3>
                         <a class="button filled" href="{{study.url}}">View Case Study</a>

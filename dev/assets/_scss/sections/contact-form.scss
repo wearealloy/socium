@@ -2,12 +2,12 @@ section.contact-form{
 
     position: relative;
     background-color: #E3E3E3;
-    padding-top: 200px;
+    // padding-top: 200px;
 
-    @media screen and (min-width: $tablet-BP) {
-        padding-top: 0px;
+    // @media screen and (min-width: $tablet-BP) {
+    //     padding-top: 0px;
         
-    }
+    // }
 
     &:before{
         position: absolute;
@@ -33,16 +33,16 @@ section.contact-form{
     >div{
         position: relative;
         z-index: 1;
-        margin-top: -100px;
-        @media screen and (min-width: $tablet-BP) {
-            padding-bottom: 100px;
-            margin-top: 0px;
-        }
+        // margin-top: -100px;
+        // @media screen and (min-width: $tablet-BP) {
+        //     padding-bottom: 100px;
+        //     margin-top: 0px;
+        // }
     }
 
     p{
         text-align: center;
-        line-height: 1.15;
+        line-height: 1.35;
         margin-bottom: 60px;
     }
 
@@ -73,6 +73,19 @@ section.contact-form{
                 border-bottom: 2px solid $darkBlue;
                 width: 100%;
                 border-radius: 0;
+
+                &.error{
+                    border-bottom-color: #f75757; 
+                }
+
+                &:focus{
+                   border-bottom-color: $green; 
+                   outline: none;
+                }
+
+                &::placeholder{
+                    color: #C0C0C0;
+                }
             }
 
             textarea{
@@ -96,7 +109,6 @@ section.contact-form{
             }
             text-align: center; 
             button{
-                padding: 0.65em 3em 0.55em;
                 margin: 0;
 
                 &:hover{

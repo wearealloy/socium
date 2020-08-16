@@ -1,9 +1,10 @@
 <section class="contact-cta">
     <div>
-        <div class="cta-container">
+        <div class="cta-container" data-animateInView>
             <h4 class="h3">{% if entry.title == 'solutions' %}{{entry.grayCtaHeader}}{% else %}{{caseStudiesCta.grayCtaHeader}}{% endif %}</h4>
             <p>{% if entry.title == 'solutions' %}{{entry.grayCtaSubheader}}{% else %}{{caseStudiesCta.grayCtaSubheader}}{% endif %}</p>
             <a href="/contact" class="button filled">Contact Us</a>
+            <img class="logo-on-image" src="/media/global/socium-lines.svg" alt="">
         </div>
     </div>
 </section>

@@ -1,15 +1,22 @@
 section.case-studies-list{
 
     .list-container{
-        margin-top: 80px;
+        margin-top: 60px;
+        
+        @media screen and (min-width: $mobile-BP){            
+            margin-top: 80px;
+        }
 
         .case-study{
             display: flex;
             flex-wrap: wrap;
+            margin: 0 auto;
             margin-bottom: 70px;
+            max-width: 550px;
             
             @media screen and (min-width: $tablet-BP){
                 margin-bottom: 110px;
+                max-width: unset;
             }
 
             &:nth-last-child(1){
@@ -17,6 +24,18 @@ section.case-studies-list{
             }
 
             .img-container{
+
+                transition: all 0.5s ease-in-out;
+                opacity: 0;
+                transform: translateY(-5%);
+        
+                &.animated{
+                    opacity: 1;
+                    transform: translateY(0%);
+                }
+                &.animated-delay{
+                    transition-delay: 0.8s;
+                }
 
                 @media screen and (min-width: $tablet-BP){
                     width: 60%;
@@ -38,6 +57,19 @@ section.case-studies-list{
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-start;
+
+                transition: all 0.5s 0.3s ease-in-out;
+                opacity: 0;
+                transform: translateY(-5%);
+        
+                &.animated{
+                    opacity: 1;
+                    transform: translateY(0%);
+                }
+
+                &.animated-delay{
+                    transition-delay: 1s;
+                }
 
                 @media screen and (min-width: $tablet-BP){
                     width: 50%;

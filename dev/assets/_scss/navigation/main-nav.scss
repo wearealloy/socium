@@ -11,7 +11,7 @@ div.main-nav-container {
 	z-index: 999;
 
 	@media screen and (min-width: $tablet-BP){
-		padding: 40px 40px;
+		padding: 30px 40px;
 	}
 
     nav.main-nav {
@@ -20,10 +20,15 @@ div.main-nav-container {
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+		align-items: center;
+		
+		.logo-container{
+			display: inline-flex;
+			align-items: center;
+		}
 
         .logo {
-			width: 130px;
+			width: 150px;
 			position: relative;
 			z-index: 999;
 
@@ -65,11 +70,11 @@ div.main-nav-container {
                 text-decoration: none;
                 position: relative;
 				margin-bottom: 40px;
-				font-size: 30px;
+				font-size: 25px;
 				
 				@media screen and (min-width: $tablet-BP) {
 					margin-right: 40px;
-					font-size: 18px;
+					font-size: 17px;
 					margin-bottom: 0px;
 				}
 
@@ -81,7 +86,8 @@ div.main-nav-container {
 
                     &:before,
                     &:after {
-                        display: block;
+						opacity: 1;
+						transform: translateY(0);
                     }
                 }
 
@@ -93,7 +99,9 @@ div.main-nav-container {
                     width: 100%;
                     height: 1px;
                     background-color: $green;
-                    display: none;
+					opacity: 0;
+					transform: translateY(6px);
+					transition: all 0.3s linear;
                 }
 
                 &:before {
@@ -143,5 +151,32 @@ div.main-nav-container {
 				transform: translateY(-10px) rotate(-225deg);
 			}
 		}
-    }
+	}
+	
+	&.blogArticle{
+		background-color: $white;
+
+		&.open{
+			nav.main-nav .logo{
+				path, .rect-logo{
+					fill: $white;
+				}
+			}
+		}
+
+		nav.main-nav{
+
+			.logo{
+				path, .rect-logo{
+					fill: $darkBlue;
+				}
+			}
+
+			div.links-container:not(.open){
+				a:not(.hamburger){
+					color: $darkBlue;
+				}
+			}
+		}
+	}
 }

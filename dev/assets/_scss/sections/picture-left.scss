@@ -1,24 +1,32 @@
 section.picture-left{
 
-    @media screen and (min-width: $tablet-BP) {
+    @media screen and (min-width:750px) {
         padding-left: 0;
     }
 
     div.blue-phrase{
-        @media screen and (min-width: $tablet-BP){
+        @media screen and (min-width:750px){
             padding-left: 4em;
             max-width: calc(1100px + 4em);
         }
     }
 
     >div.grid{
-
         display: grid;
         max-width: 1300px;
         padding-top: 0;
         padding-bottom: 0;
 
-        @media screen and (min-width: $tablet-BP) {
+        opacity: 0;
+        transform: translateY(-5%);
+        transition: all 0.7s ease-in-out;
+
+        &.animated{
+            opacity: 1;
+            transform: translateY(0%);
+        }
+
+        @media screen and (min-width:750px) {
             padding-left: 0;
             padding-right: 0;
             padding-bottom: 4em;
@@ -35,10 +43,10 @@ section.picture-left{
     }
 
     .text-container{
-        max-width: 420px;
+        max-width: 460px;
         margin-top: -15px;
 
-        @media screen and (min-width: $tablet-BP){
+        @media screen and (min-width:750px){
             padding-top: 20px;
             padding-left: 60px
         }
@@ -51,7 +59,7 @@ section.picture-left{
             color: $gray;
             transform: translateX(-20px);
 
-            @media screen and (min-width: $tablet-BP) {
+            @media screen and (min-width:750px) {
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -67,7 +75,7 @@ section.picture-left{
             color: $darkBlue;
 
 
-            @media screen and (min-width: $tablet-BP){
+            @media screen and (min-width:750px){
                 // margin-top: 40px;
                 position: relative;
                 z-index: 2;
@@ -80,7 +88,7 @@ section.picture-left{
 
     .image-container{
 
-        @media screen and (min-width: $tablet-BP){
+        @media screen and (min-width:750px){
             height: 440px;
         }
 

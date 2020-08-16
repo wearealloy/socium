@@ -1,11 +1,26 @@
 div.blue-phrase{
 
     max-width: 800px;
-    margin: 50px auto;
+    margin: 0px auto;
+    
+    @media screen and (min-width: $mobile-BP) {
+        margin: 50px auto;   
+    }
 
     p{
         color: $lightBlue;
         margin: 0;
         text-align: center;
+        opacity: 0;
+        transform: translateY(-7%);
+        transition: all 0.7s ease-in-out;
+
+        &.animated{
+            opacity: 1;
+            transform: translateY(0%);
+        }
+        &.animated-delay{
+            transition-delay: 0.5s;
+        }
     }
 }

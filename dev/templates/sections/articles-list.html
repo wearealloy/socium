@@ -1,9 +1,9 @@
 {% set articles = craft.entries.section('blogArticle').all() %}
 
-<section class="articles-list">
+<section class="articles-list nav-wp">
     <div>
         {% for article in articles %}
-            <article class="blog-article double-lined">
+            <article class="blog-article double-lined" data-animateInView>
                 <h3 class="h4">{{article.title}}</h3>
                 <p class="excerpt">{{article.blogPosrExceprt}}</p>
                 <div class="button-cont">

@@ -1,5 +1,5 @@
 // pargraph font sizes
-$p-ffSize: 19px;
+$p-ffSize: 18px;
 $p-ffSize-mobile: 17px;
 
 .ff-sansSerif-alt{
@@ -13,10 +13,10 @@ $p-ffSize-mobile: 17px;
     font-family: $ff-sansSerif-alt;
     font-weight: 500;
     letter-spacing: 1px;
+    line-height: 1;
 
     @media(min-width: $tablet-BP) {
         font-size: 80px;
-        line-height: 1;
     }
 }
 
@@ -71,17 +71,21 @@ h6 {
         width: 50px;
         height: 5px;
         background-color: $lightBlue;
-        display: inline-block;
-        margin-bottom: 4px;
-        margin-left: 15px;
+        display: block;
+        margin-bottom: 0px;
+        margin-top: 16px;
+        
+        @media screen and (min-width: $mobile-BP) {
+            margin-left: 15px;
+            margin-top: 0;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
 
         &.gray{
             background-color: #A4A4A4;
         }   
 
-        @media screen and (min-width: $tablet-BP) {
-            margin-bottom: 8px;
-        }
     }
 }
 
@@ -158,7 +162,6 @@ p {
     font-size: $p-ffSize-mobile;
     line-height: 1.6;
     font-family: $ff-sansSerif;
-    letter-spacing: 1px;
 
     @media(min-width: $tablet-BP) {
         font-size: $p-ffSize;
@@ -275,7 +278,7 @@ hr {
 button,
 .button,
 input[type="submit"] {
-    font-size: $p-ffSize-mobile;
+    font-size: $p-ffSize;
     font-family: $ff-sansSerif-alt;
     letter-spacing: 1px;
 
@@ -291,11 +294,11 @@ input[type="submit"] {
 
 form {
     input, textarea {
-        font-size: 14px;
+        font-size: $p-ffSize-mobile;
         font-family: $ff-sansSerif;
 
         @media(min-width: $tablet-BP) {
-            font-size: 16px;
+            font-size: $p-ffSize
         }
     }
 }

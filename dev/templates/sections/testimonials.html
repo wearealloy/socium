@@ -1,16 +1,18 @@
 <section class="testimonials">
     <div>
-        <div class="slider-container">
+        <div class="slider-container" data-animateInView>
             <h3 class="ff-sansSerif-alt">{{entry.testimonialsHeader}}</h3>
-            <div class="testimonials-slider">
+            <div class="testimonials-slider" data-alloyEqualize>
                 {% for testimonial in entry.homeTestimonials %}
                 <div class="slide">
-                    <p>{{testimonial.testimonial}}</p>
+                   <div data-alloyEqualize-watch>
+                        <p>{{testimonial.testimonial}}</p>
+                   </div>
                 </div>
                 {% endfor %}
             </div>
         </div>
-        <div class="company-logos-grid">
+        <div class="company-logos-grid" data-animateInView>
             <img src="/media/global/company-logo.svg" alt="">
             <img src="/media/global/company-logo.svg" alt="">
             <img src="/media/global/company-logo.svg" alt="">

@@ -13,6 +13,16 @@ section.contact-cta{
         background-position: center;
         color: $white;
         padding: 40px;
+        position: relative;
+
+        transition: all 0.5s 0.3s ease-in-out;
+        opacity: 0;
+        transform: translateY(-5%);
+
+        &.animated{
+            opacity: 1;
+            transform: translateY(0%);
+        }
         
         @media screen and (min-width: $mobile-BP) {
             padding: 80px;
@@ -24,8 +34,17 @@ section.contact-cta{
         p{
             margin-top: 0;
         }
-        a.button{
-            padding: 0.85em 1.8em 0.75em;
+
+        img{
+            display: none;
+            position: absolute;
+            width: 100px;
+            right: 50px;
+            bottom: 30px;
+
+            @media screen and (min-width: $mobile-BP) {
+                display: initial;
+            }
         }
     }
 }

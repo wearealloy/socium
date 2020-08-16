@@ -1,36 +1,44 @@
-section.certificates{
-    >div{
+section.certificates {
+    >div {
         display: flex;
         flex-wrap: wrap;
     }
 
-    p{
+    p {
         @media screen and (min-width: $tablet-BP) {
             width: calc(50% - 30px);
             padding-right: 30px;
         }
     }
 
-    .certificate-icons{
+    .certificate-icons {
         display: flex;
         justify-content: space-between;
-        text-align: center;
-        flex-wrap: wrap;
-        margin-top: 30px;
+        flex-direction: column;
+        margin-top: 15px;
 
-        @media screen and (min-width: $tablet-BP){
+        @media screen and (min-width: $mobile-BP) {
+            margin-top: 30px;
+            text-align: center;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        @media screen and (min-width: $tablet-BP) {
             margin-top: 0px;
         }
 
-        img{
-            
-            width: 30%;
+        img {
 
-            @media screen and (min-width: $tablet-BP){
-                width: 100%;
+            width: 150px;
+            margin-bottom: 30px;
+
+            &:nth-last-child(1) {
+                margin-bottom: 0;
             }
 
-            @media screen and (min-width: $desktop-BP){
+            @media screen and (min-width: $mobile-BP) {
+                margin-bottom: 0;
                 max-width: 30%;
             }
         }

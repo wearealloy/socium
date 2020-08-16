@@ -1,6 +1,6 @@
 section.picture-right{
 
-    @media screen and (min-width: $tablet-BP) {
+    @media screen and (min-width: 750px) {
         padding-right: 0;
     }
 
@@ -10,7 +10,16 @@ section.picture-right{
         max-width: 1300px;
         // padding-top: 0;
 
-        @media screen and (min-width: $tablet-BP) {
+        opacity: 0;
+        transform: translateY(-5%);
+        transition: all 0.7s 0.3s ease-in-out;
+
+        &.animated{
+            opacity: 1;
+            transform: translateY(0%);
+        }
+
+        @media screen and (min-width: 750px) {
             padding-right: 0;
             padding-left: 0;
             margin-left: auto;
@@ -25,12 +34,12 @@ section.picture-right{
     }
 
     .text-container{
-        max-width: 420px;
+        max-width: 460px;
         position: relative;
         order: 2;
         margin-top: -15px;
 
-        @media screen and (min-width: $tablet-BP){
+        @media screen and (min-width: 750px){
             order: unset;
             padding-top: 20px;
             padding-right: 60px;
@@ -44,13 +53,17 @@ section.picture-right{
         h2.gray-header{
             transform: translateX(-20px);
             
-            @media screen and (min-width: $tablet-BP) {
+            @media screen and (min-width: 750px) {
                 position: absolute;
                 top: 0;
-                left: -40px;
+                left: -30px;
                 // margin: 0 auto;
                 text-align: center;
                 transform: translateY(-38%) translateX(0px);
+            }
+
+            @media screen and (min-width: $tablet-BP){
+                left: -40px;
             }
 
             @media screen and (min-width: $desktop-BP){
@@ -63,7 +76,7 @@ section.picture-right{
             color: $darkBlue;
 
 
-            @media screen and (min-width: $tablet-BP){
+            @media screen and (min-width: 750px){
                 // margin-top: 40px;
                 position: relative;
                 z-index: 2;
@@ -78,7 +91,7 @@ section.picture-right{
 
         order: 1;
 
-        @media screen and (min-width: $tablet-BP){
+        @media screen and (min-width: 750px){
             order: unset;
             height: 440px;
         }

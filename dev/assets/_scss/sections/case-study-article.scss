@@ -3,6 +3,14 @@ section.case-study-article{
     >div{
         max-width: 900px;
         padding-bottom: 0;
+
+        >:nth-child(1){
+            margin-top: 0;
+        }
+        
+        // @media screen and (max-width: $mobile-BP){
+        //     padding: 2em 0;
+        // }
     }
 
     h1, h2, h3, h4, h5, h6{

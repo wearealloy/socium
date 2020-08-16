@@ -2,18 +2,25 @@ section.title-overlap{
 
     >div{
         position: relative;
+
+        transition: all 0.5s 0.3s ease-in-out;
+        opacity: 0;
+        transform: translateY(-5%);
+
+        &.animated{
+            opacity: 1;
+            transform: translateY(0%);
+        }
     }
 
     .gray-header{
-
-
-        
         @media screen and (min-width: $tablet-BP) {
             text-align: right;
         }
     }
 
     p{
+        max-width: 600px;
         @media screen and (min-width: $tablet-BP) {
             max-width: 65%;
             margin-top: -65px;

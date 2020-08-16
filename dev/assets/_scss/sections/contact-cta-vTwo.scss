@@ -1,19 +1,21 @@
-section.contact-cta-vTwo{
+section.contact-cta-vTwo {
 
-    >div{
+    >div {
+        padding-bottom: 0;
+
         @media screen and (max-width: $tablet-BP) {
             padding-top: 5px;
         }
     }
 
-    .cta-container{
+    .cta-container {
         position: relative;
         border-top: 1px solid $gray;
         text-align: center;
-        padding: 50px 0;
+        padding: 50px 0 55px;
         margin-top: -5px;
 
-        &:before{
+        &:before {
             position: absolute;
             width: 100%;
             height: 1px;
@@ -23,20 +25,34 @@ section.contact-cta-vTwo{
             left: 0;
         }
 
-        h4{
+        h4 {
             margin-bottom: 10px;
         }
 
-        p{
-            margin-top: 0;
+        p {
+            margin-top: 5px;
             line-height: 1;
         }
 
-        .button.filled{
-            padding: 0.85em 1.8em 0.75em;
-            &:hover{
+        .button.filled {
+            &:hover {
                 color: $green;
             }
+        }
+
+        h4,
+        p,
+        .button {
+
+            transition: all 0.5s 0.3s ease-in-out;
+            opacity: 0;
+            transform: translateY(-5%);
+
+            &.animated {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+
         }
     }
 }

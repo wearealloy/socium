@@ -4,16 +4,18 @@
 
 {% set blogImage = entry.featuredImage.one() %}
 
-<main role="article" itemscope itemtype="http://schema.org/Article" class="template {{ entry.title | lower }}" id="main-content">
+<main role="article" itemscope itemtype="http://schema.org/Article" class="template blog-article-t" id="main-content">
     <section class="blog-article">
         <div>
             <div class="content">
-                <img itemprop="image" src="{{blogImage.url}}" alt="{{blogImage.title}}">
-                <h1 itemprop="name headline" class="h4 article-header">{{entry.title}}</h1>
-                {{entry.blogPostContent}}
+                <img data-animateInView itemprop="image" src="{{blogImage.url}}" alt="{{blogImage.title}}">
+                <div data-animateInView class="content-inner">
+                    <h1 itemprop="name headline" class="h3 article-header">{{entry.title}}</h1>
+                    {{entry.blogPostContent}}
+                </div>
             </div>
             <div class="share-column">
-                <div class="share">
+                <div class="share" data-animateInView>
                     <h4 itemprop="author" class="h5">By {{entry.blogPostAuthor}}</h4>
                     <time itemprop="datePublished">{{ entry.postDate | date("m/d/yy")}}</time>
                     <div class="line"></div>
@@ -21,7 +23,7 @@
                 </div>
             </div>
             <div class="back-container">
-                <a href="/blog" class="ff-sansSerif-alt">Back to all blog posts</a>
+                <a href="/blog" class="ff-sansSerif-alt"><img src="/media/global/back-arrow.svg" alt=""> Back to all blog posts</a>
             </div>
         </div>
     </section>

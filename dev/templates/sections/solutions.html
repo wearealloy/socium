@@ -3,7 +3,7 @@
     <div>
         {% for solution in solutions %}
             {% set study = solution.caseStudy.one() %}
-            <div class="solution double-lined">
+            <div class="solution double-lined" data-animateInView>
                 <div class="solution-desc">
                     <h3 class="h2 ff-sansSerif-alt">{{solution.header}}</h3>
                     <div class="info">
