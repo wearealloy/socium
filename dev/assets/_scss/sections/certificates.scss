@@ -16,6 +16,7 @@ section.certificates {
         justify-content: space-between;
         flex-direction: column;
         margin-top: 15px;
+        width: 100%;
 
         @media screen and (min-width: $mobile-BP) {
             margin-top: 30px;
@@ -31,6 +32,7 @@ section.certificates {
         img {
 
             width: 150px;
+            margin: 0 auto;
             margin-bottom: 30px;
 
             &:nth-last-child(1) {

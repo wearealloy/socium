@@ -1,6 +1,6 @@
 enableVersioning: true
 handle: caseStudy
-name: 'Case Study'
+name: 'Case Studies'
 propagationMethod: all
 siteSettings:
   8bd7e41f-a4b4-4a7b-a64b-e17c241cb21a:

@@ -14,23 +14,24 @@
         <div class="column">
             <h5 class="ff-sansSerif-alt h6">Contact</h5>
             <div class="links-container contact">
-                <div><a href="tel:">123 456 7890</a></div>
-                <div><a href="mailto:">info@sociumsolutionsllc.com</a></div>
+                <div><a href="tel:{{sociumInformation.phone}}">{{sociumInformation.phone}}</a></div>
+                <div><a href="mailto:{{sociumInformation.email}}">{{sociumInformation.email}}</a></div>
             </div>
         </div>
         <div class="column">
             <h5 class="ff-sansSerif-alt h6">Address</h5>
             <div class="links-container">
-                <a href="">
-                    11501 Shadow Creek Parkway <br>
-                    Suite 111-522, Pearland, Texas 77584
-                </a>
+                {% for row in sociumInformation.address %}
+                    <a href="{{row.googleMapsLink}}" target="_blank" class="address">
+                        {{row.address | nl2br }}
+                    </a>
+                {% endfor %}
             </div>
         </div>
         <div class="column">
             <h5 class="ff-sansSerif-alt h6">Follow</h5>
             <div class="links-container">
-                <a href="">
+                <a href="{{sociumInformation.linkedin}}" target="_blank" class="linkedin">
                     <img class="linkedin" src="/media/global/linkedin.svg" alt="LinkedIn">
                 </a>
             </div>
@@ -38,6 +39,6 @@
     </footer>
     <div class="copy-cont">
         <a href="/"><img class="logo" src="/media/global/socium-logo-lightBlue.svg" alt="Socium"></a>
-        <p>&copy; 2020 Socium Solutions, LLC <br><span>|</span> <a href="">Privacy Policy</a></p>
+        <p>&copy; 2020 Socium Solutions, LLC <br><span>|</span> <a href="/privacy-policy">Privacy Policy</a></p>
     </div>
 </div>

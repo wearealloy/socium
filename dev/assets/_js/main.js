@@ -19,7 +19,9 @@ createWapointOnView();
 
 $('.testimonials-slider').slick({
   arrows: false,
-  dots: true
+  dots: true,
+  autoplay: true,
+  autoplaySpeed: 4000
 });
 
 /*----------------------------------------------------------------*\
@@ -55,6 +57,36 @@ menu.addEventListener("click", () => {
 });
 
 
+/*----------------------------------------------------------------*\
+		SOCIAL SHARING
+\*----------------------------------------------------------------*/
+
+function singleArticle(){
+  var linkedInLink = $('.linkedInShare');
+  // var facebookLink = $('.facebookShare');
+  // var twitterShare=  $('.twitterShare');
+  // var mailShare = $('.mailShare');
+
+  var postTitle = $('article .title').text();
+
+  var url = encodeURIComponent(window.location.href); /*+ '&title=' + encodeURIComponent(postTitle);*/
+  var encodedTitle = encodeURIComponent(postTitle);
+
+  var linkedinUrl = 'https://www.linkedin.com/sharing/share-offsite/?url=' + url;
+
+  // var facebookUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + url;
+
+  // var twitterUrl = 'https://twitter.com/intent/tweet?text=' + encodedTitle + '%20' + url;
+
+  // var mailUrl = 'mailto:?subject=Check out this article: ' + encodedTitle + '&body=' + 'I thought you might like this article:' + url;
+
+
+  linkedInLink.attr('href', linkedinUrl);
+  // facebookLink.attr('href', facebookUrl);
+  // twitterShare.attr('href', twitterUrl);
+  // mailShare.attr('href', mailUrl);
+
+}
 
 /*----------------------------------------------------------------*\
 		EQUILIZER

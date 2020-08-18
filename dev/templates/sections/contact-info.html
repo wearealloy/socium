@@ -1,17 +1,17 @@
 <section class="contact-info nav-wp">
     <div>
-        <div class="contact">
+        <div class="contact" data-animateInView>
             <h4 class="h5">Phone</h4>
             <a href="tel:{{entry.phone}}">{{entry.phone}}</a>
         </div>
-        <div class="contact">
+        <div class="contact" data-animateInView>
             <h4 class="h5">Email</h4>
             <a href="mailto:{{entry.email}}">{{entry.email}}</a>
         </div>
-        <div class="contact">
+        <div class="contact" data-animateInView>
             <h4 class="h5">Address</h4>
             {% for row in entry.address %}
-            <a href="{{row.googleMapsLink}}">{{ row.address | nl2br}}</a>
+            <a target="_blank" href="{{row.googleMapsLink}}">{{ row.address | nl2br}}</a>
             {% endfor %}
         </div>
     </div>

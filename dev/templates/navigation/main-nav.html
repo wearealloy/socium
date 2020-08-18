@@ -26,11 +26,11 @@
         </a>
 
         <div class="links-container">
-            <a href="/about">about</a>
-            <a href="/solutions">solutions</a>
-            <a href="/case-studies">case studies</a>
-            <a href="/blog">blog</a>
-            <a href="/contact">contact</a>
+            <a href="/about" {% if craft.app.request.segments|first == 'about' %}class="active"{% endif %}>about</a>
+            <a href="/solutions" {% if craft.app.request.segments|first == 'solutions' %}class="active"{% endif %}>solutions</a>
+            <a href="/case-studies" {% if craft.app.request.segments|first == 'case-studies' %}class="active"{% endif %}>case studies</a>
+            <a href="/blog" {% if craft.app.request.segments|first == 'blog' %}class="active"{% endif %}>blog</a>
+            <a href="/contact" {% if craft.app.request.segments|first == 'contact' %}class="active"{% endif %}>contact</a>
         </div>
 
         <div class="menu-container">

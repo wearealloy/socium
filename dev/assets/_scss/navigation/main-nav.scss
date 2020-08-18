@@ -82,7 +82,7 @@ div.main-nav-container {
                     margin-right: 0;
                 }
 
-                &:hover {
+                &:hover, &.active {
 
                     &:before,
                     &:after {

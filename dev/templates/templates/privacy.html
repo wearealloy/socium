@@ -1,0 +1,18 @@
+{% extends "_layout.html" %}
+
+{% block content %}
+
+<main class="template {{ entry.title | lower }}" id="main-content">
+    <section class="blue-banner" style="background-image: url('/media/global/banner/contact-banner.jpg');">
+        <div>
+            <h1 class="h3">Privacy policy. <span class="blue-line"></span> </h1>
+        </div>
+    </section>
+    <section class="privacy-policy nav-wp">
+        <div>
+            {{entry.privacyPolicy}}
+        </div>
+    </section>
+</main>
+
+{% endblock %}
